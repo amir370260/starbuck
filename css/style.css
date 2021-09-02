@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    padding: 10px;
+}
+.nav-item{
+    margin-right: 30px;
+}
+.nav-link{
+    color: rgb(7, 3, 49) !important;
+    font-size: 17px;
+    font-weight: 500;
+    z-index: 9998;
+    position: relative;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 0%;
+    background: #027144;
+    z-index: 999;
+    transition: 0.3s;
+}
+.nav-link:hover::before{
+    color: #027144 !important;
+    width: 100% !important;
+    transition: 0.3s;
+}
+
+/* **********
+banner css
+************ */
+.banner{
+    width: 100%;
+    position: relative;
+    height: 82vh;
+}
+.b-left{
+    margin: 70px 0px 20px 50px;
+}
+.b-left h1{
+    font-size: 48px;
+    font-weight: 500;
+}
+.b-left h1 span{
+    color: #027144;
+    font-weight: 700;
+    font-size: 54px;
+}
+.b-left p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(80, 80, 80);
+    margin-bottom: 30px;
+}
+.b-btn a{
+    color: #fff;
+}
+.b-btn{
+    text-decoration: none;
+    background: #027144;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+   
+}
+.b-btn:hover{
+    background:linear-gradient(to right,#FF0000,#F43B86) !important;
+   transition: 0.9s;
+}
+
+.img-b {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 99;
+}
+.circle{
+    position: absolute;
+    background: #027144;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right:0;
+    clip-path: circle(746px at right 863px);  
+}
+.social {
+    position: absolute;
+    right: 26px;
+    top: 160px;
+    text-align: center;
+    z-index: 999999;
+}
+.social ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.social ul li a i{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+}
+.social ul li a i:hover{
+    color: #FAFF00 !important;
+}
+.flavour{
+    position: absolute;
+    left: 36%;
+    bottom: 10px;
+    z-index: 999;
+}
+
+.flavour ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.6s;
+}
+.flavour ul li:hover{
+    transform: translateY(-15px);
+    transition: 0.6s;
+}
+.flavour ul li img{
+    width: 70px;
+}
