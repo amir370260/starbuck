@@ -66,14 +66,14 @@
         <div class="col-md-6">
           <div class="b-left">
             <h1>It's not just Coffee</h1>
-            <h1>It's <span>Starbucks</span></h1>
+            <h1>It's <span id="text">Starbucks</span></h1>
 
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium dignissimos reprehenderit quod amet
               voluptate aliquid in dolore! Quo, nostrum ea! Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
               adipisicing rerum! </p>
 
           
-               <button  class="b-btn"> <a href="">Learn More</a></button>
+               <button  class="b-btn" id="btn"> <a href="">Learn More</a></button>
               
           </div>
         </div>
@@ -96,9 +96,9 @@
 
             <div class="flavour">
               <ul>
-                <li><img src="img/btn (3).png" onclick="one();four()"> </li>
-                <li><img src="img/btn (2).png" onclick="two();five()"> </li>
-                <li><img src="img/btn (1).png" onclick="three();six()"> </li>
+                <li><img src="img/btn (3).png" onclick="one();four();seven();eleven()"> </li>
+                <li><img src="img/btn (2).png" onclick="two();five();eight();twelve()"> </li>
+                <li><img src="img/btn (1).png" onclick="three();six();nine();thirteen()"> </li>
               </ul>
             </div>
           </div>
@@ -138,6 +138,35 @@
      }
      function six(){
           bg.style.background ='#d752b1';
+     }
+
+
+     var text = document.getElementById("text");
+
+     function seven(){
+       text.style.color = '#027144';
+     }
+
+     function eight(){
+       text.style.color = '#eb7495';
+     }
+
+     function nine(){
+       text.style.color = '#d752b1';
+     }
+
+
+     var btn = document.getElementById("btn");
+
+     function eleven(){
+       btn.style.background = '#027144';
+     }
+
+     function twelve(){
+       btn.style.background = '#eb7495';
+     }
+     function thirteen(){
+       btn.style.background = '#d752b1';
      }
   </script>
 
