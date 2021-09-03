@@ -80,10 +80,10 @@
         <div class="col-md-6">
           <div class="b-right">
             <div class="img-b">
-              <img src="img/img1.png" alt="" class="image w-50">
+              <img src="img/img1.png" alt="" class="myImage w-50" id="image-area">
 
             </div>
-            <div class="circle">
+            <div class="circle" id="bg">
 
             </div>
             <div class="social">
@@ -96,9 +96,9 @@
 
             <div class="flavour">
               <ul>
-                <li><img src="img/btn (3).png" onclick="afterclick()"> </li>
-                <li><img src="img/btn (2).png" onclick="afterclick()"> </li>
-                <li><img src="img/btn (1).png" onclick="afterclick()"> </li>
+                <li><img src="img/btn (3).png" onclick="one();four()"> </li>
+                <li><img src="img/btn (2).png" onclick="two();five()"> </li>
+                <li><img src="img/btn (1).png" onclick="three();six()"> </li>
               </ul>
             </div>
           </div>
@@ -112,9 +112,33 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
+   
+     var img = document.getElementById("image-area");
+
+     function one(){
+       img.src='img1.png';
+     }
+
+     function two(){
+       img.src='img2.png';
+     }
+     function three(){
+       img.src='img3.png';
+     }
 
 
 
+     var color = document.getElementById("bg");
+      
+     function four(){
+          bg.style.background ='#027144';
+     }
+     function five(){
+          bg.style.background ='#eb7495';
+     }
+     function six(){
+          bg.style.background ='#d752b1';
+     }
   </script>
 
 </body>

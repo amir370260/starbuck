@@ -102,7 +102,7 @@ banner css
     width: 100%;
     top: 0;
     right:0;
-    clip-path: circle(746px at right 863px);  
+    clip-path: circle(75% at right 863px);  
 }
 .social {
     position: absolute;
